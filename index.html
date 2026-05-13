@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>World News Map - Language Selection</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #efcc00;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container { max-width: 900px; width: 100%; text-align: center; }
+        .title { color: #333; margin-bottom: 50px; animation: fadeInDown 0.8s ease; }
+        .title h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        .title p { font-size: 1.1rem; opacity: 0.8; }
+        .language-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; margin-bottom: 50px; animation: fadeInUp 0.8s ease; }
+        .language-card {
+            background: white; border-radius: 20px; padding: 35px 25px;
+            transition: all 0.3s ease; text-decoration: none; display: block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); cursor: pointer;
+        }
+        .language-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+        .language-flag { font-size: 4.5rem; margin-bottom: 15px; }
+        .language-name { font-size: 1.8rem; font-weight: bold; margin-bottom: 8px; color: #333; }
+        .language-desc { color: #666; font-size: 0.9rem; }
+        .card-en { border-top: 5px solid #1a9850; }
+        .card-fr { border-top: 5px solid #0055a4; }
+        .card-pt { border-top: 5px solid #009c3b; }
+        .stats { color: #333; margin-top: 20px; font-size: 0.9rem; opacity: 0.7; }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) {
+            .title h1 { font-size: 1.8rem; }
+            .language-name { font-size: 1.4rem; }
+            .language-flag { font-size: 3rem; }
+            .language-card { padding: 25px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Global Brief</h1>
+            <!--<p>Select your language to explore news across Africa</p>-->
+        </div>
+        <div class="language-grid">
+            <a href="world_map_en.html" class="language-card card-en">
+                 <!--<div class="language-flag">🇬🇧</div>-->
+                <div class="language-name">English</div>
+                <div class="language-desc">World News in English</div>
+            </a>
+            <a href="world_map_fr.html" class="language-card card-fr">
+                <!--<div class="language-flag">🇫🇷</div>-->
+                <div class="language-name">Français</div>
+                <div class="language-desc">Actualités du monde en français</div>
+            </a>
+            <a href="world_map_pt.html" class="language-card card-pt">
+                <!--<div class="language-flag">🇵🇹</div>-->
+                <div class="language-name">Português</div>
+                <div class="language-desc">Actualités du monde en portugais</div>
+            </a>            
+            <a href="world_map_es.html" class="language-card card-es">
+                <!--<div class="language-flag">🇵🇹</div>-->
+                <div class="language-name">Española</div>
+                <div class="language-desc">Noticias Mundiales en Español</div>
+            </a>                       
+            <a href="world_map_zh.html" class="language-card card-zh">
+                <!--<div class="language-flag">🇵🇹</div>-->
+                <div class="language-name">中国人</div>
+                <div class="language-desc">普通话世界新闻</div>
+            </a>
+            <a href="world_map_id.html" class="language-card card-id">
+                <!--<div class="language-flag">🇵🇹</div>-->
+                <div class="language-name">Indonesia</div>
+                <div class="language-desc">Berita Dunia di indonesia</div>
+            </a>
+            <a href="world_map_hi.html" class="language-card card-hi">
+                <!--<div class="language-flag">🇵🇹</div>-->
+                <div class="language-name">हिंदी</div>
+                <div class="language-desc">विश्व समाचार हिंदी में</div>
+            </a>            
+            <a href="world_map_ar.html" class="language-card card-ar">
+                <!--<div class="language-flag">🇵🇹</div>-->
+                <div class="language-name">عربي</div>
+                <div class="language-desc">أخبار العالم باللغة العربية</div>
+            </a>
+            <a href="world_map_bn.html" class="language-card card-bn">
+                <!--<div class="language-flag">🇵🇹</div>-->
+                <div class="language-name">বাংলা</div>
+                <div class="language-desc">বাংলায় বিশ্ব সংবাদ</div>
+            </a>
+            <a href="world_map_ur.html" class="language-card card-ur">
+                <!--<div class="language-flag">🇵🇹</div>-->
+                <div class="language-name">اردو</div>
+                <div class="language-desc">عالمی خبریں اردو میں</div>
+            </a>
+            
+            
+            
+            
+        </div>
+        
+    </div>
+</body>
+</html>
